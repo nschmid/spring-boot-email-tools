@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>it.ozimov</groupId>
-    <artifactId>spring-boot-email-build</artifactId>
+    <artifactId>spring-boot2x-email-build</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -20,12 +20,12 @@
     <inceptionYear>2015</inceptionYear>
 
     <modules>
-        <module>spring-boot-email-core</module>
+        <module>spring-boot2x-email-core</module>
 
 <!-- This module is on hold for now. Migration to Spring Boot 2 is painful
-        <module>spring-boot-email-redis-persistence</module>
+        <module>spring-boot2x-email-redis-persistence</module>
 -->
-        <module>spring-boot-email-template-engines</module>
+        <module>spring-boot2x-email-template-engines</module>
     </modules>
 
     <url>https://github.com/ozimov/spring-boot-email-tools</url>

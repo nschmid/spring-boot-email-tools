@@ -28,8 +28,8 @@
         </dependency>
         <dependency>
             <groupId>it.ozimov</groupId>
-            <artifactId>spring-boot-thymeleaf-email</artifactId>
-            <version>0.6.3</version>
+            <artifactId>spring-boot2x-thymeleaf-email</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
@@ -39,8 +39,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>
