@@ -2,6 +2,7 @@ package com.test;
 
 import it.ozimov.springboot.mail.configuration.EnableEmailTools;
 import it.ozimov.springboot.mail.service.exception.CannotSendEmailException;
+import java.net.URISyntaxException;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -41,14 +42,14 @@ public class SchedulingAndPersistenceApplication implements ApplicationContextAw
     }
 
     @PostConstruct
-    public void sendEmail() throws UnsupportedEncodingException, InterruptedException, CannotSendEmailException {
+    public void sendEmail() throws UnsupportedEncodingException, CannotSendEmailException, URISyntaxException {
         if (scheduleEmails) testService.scheduleTwoEmails();
 
         close();
     }
 
     @Async
-    private void close() {
+    void close() {
         final TimerTask shutdownTask = new TimerTask() {
             @Override
             public void run() {

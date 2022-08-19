@@ -114,8 +114,8 @@ in you `application.properties` set the configuration needed to send the emails,
 the emails using a Gmail account you can set:
 
 ```properties
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
+spring.mail.host=localhost
+spring.mail.port=25025
 spring.mail.username=name.surname@gmail.com
 spring.mail.password=V3ry_Str0ng_Password
 spring.mail.properties.mail.smtp.auth=true

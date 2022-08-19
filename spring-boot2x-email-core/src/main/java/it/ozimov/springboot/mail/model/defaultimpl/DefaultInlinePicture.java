@@ -28,7 +28,7 @@ import java.io.File;
 @Builder
 public class DefaultInlinePicture implements InlinePicture {
 
-    private static final long serialVersionUID = 1040548679790587446L;
+    private static final long serialVersionUID = Integer.MAX_VALUE;
 
     @NonNull
     private ImageType imageType;
