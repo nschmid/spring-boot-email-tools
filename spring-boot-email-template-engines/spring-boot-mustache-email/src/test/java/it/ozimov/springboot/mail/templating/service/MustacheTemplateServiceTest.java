@@ -32,8 +32,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.Map;
 import java.util.UUID;
 
-import static it.ozimov.cirneco.hamcrest.java7.AssertFluently.given;
 import static junit.framework.TestCase.fail;
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
 @RunWith(SpringRunner.class)
@@ -60,7 +60,7 @@ public class MustacheTemplateServiceTest {
         final String body = templateService.mergeTemplateIntoString(templateWithExtension, TemplatingTestUtils.MODEL_OBJECT);
 
         //Assert
-        given(body).assertThat(is(expectedBody));
+        assertThat(body, is(expectedBody));
     }
 
     @Test

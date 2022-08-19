@@ -27,9 +27,9 @@ import testutils.TestUtils;
 import java.io.File;
 import java.io.IOException;
 
-import static it.ozimov.cirneco.hamcrest.java7.AssertFluently.fail;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.fail;
 import static org.springframework.http.MediaType.IMAGE_JPEG;
 
 public class DefaultEmailAttachmentTest implements UnitTest {
